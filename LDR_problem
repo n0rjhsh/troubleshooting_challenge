@@ -9,7 +9,7 @@ void setup()
 
 void loop()
 {
-  int dataLs = analogRead(ls);
+  int dataLs = digitalRead(ls);
   if (dataLs <= 180)
   {
     digitalWrite(led, HIGH);
